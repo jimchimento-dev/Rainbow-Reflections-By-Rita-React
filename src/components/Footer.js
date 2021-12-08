@@ -27,10 +27,10 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="footerColor col-sm-3 text-center mt-3">
-                        <h4>Social</h4>
-                        <Link className="btn btn-social-icon btn-facebook"
+                        <h4 className="mb-4">Social</h4>
+                        <Link className="btn btn-social-icon btn-facebook mx-2"
                             href="https://www.facebook.com/Rainbowreflectionsbyrita/"><i class="fa fa-facebook"></i></Link>
-                        <Link className="btn btn-social-icon btn-instagram"
+                        <Link className="btn btn-social-icon btn-instagram mx-2"
                             href="https://www.instagram.com/rainbowreflectionsbyrita/?hl=en"><i
                                 class="fa fa-instagram"></i></Link>
                     </div>

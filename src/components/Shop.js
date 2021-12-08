@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { SHOPITEMS } from '../shared/ShopItems'
 
-const Shop = () => {
-    return <h1>Shop</h1>
+class Shop extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            shopItems: SHOPITEMS
+        }
+    }
+
+    render() {
+        return (
+            <div>Shop today!</div>
+        )
+    }
 }
 
 export default Shop;
