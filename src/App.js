@@ -7,10 +7,18 @@ import Contact from './components/Contact';
 import Events from './components/Events';
 import Services from './components/Services';
 import Shop from './components/Shop';
+import { SHOPITEMS } from './shared/ShopItems';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      shopItems: SHOPITEMS
+    }
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -22,7 +30,7 @@ class App extends Component {
             <Route path="/contact" exact component={Contact} />
             <Route path="/events" exact component={Events} />
             <Route path="/services" exact component={Services} />
-            <Route path="/shop" exact component={Shop} />
+            <Route path="/shop" exact component={Shop} render={() => <Shop shopItems={this.state.shopItems} />} />
           </Switch>
           <Footer />
         </div>

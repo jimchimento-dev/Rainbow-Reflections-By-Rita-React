@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import { SHOPITEMS } from '../shared/ShopItems'
+import { Card, CardImg, CardImgOverlay, CardTitle, CardBody, CardText } from 'reactstrap';
+import { SHOPITEMS } from '../shared/ShopItems';
 
 class Shop extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            shopItems: SHOPITEMS
+            shop: SHOPITEMS
         }
     }
 
     render() {
-        return (
-            <div>Shop today!</div>
-        )
+        return <div />
     }
 }
 
